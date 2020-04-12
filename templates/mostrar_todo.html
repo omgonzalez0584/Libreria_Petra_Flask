@@ -22,7 +22,6 @@
     <h2>Listado de libros</h2>
     <form action="http://127.0.0.1:5000/eliminar/" method="post">
       <table>
-        <thead>
           <tr>
             <th>Codigo</th>
             <th>Nombre</th>
@@ -31,10 +30,8 @@
             <th>Cantidad</th>
             <th>Precio</th>
             <th>Eliminar</th>
-
           </tr>
-        </thead>
-        <tbody>
+
           {% for libro in libros %}
           <tr>
             <td>{{ libro.id }} </td>
@@ -46,8 +43,8 @@
             <td> <input type="checkbox" id="{{libro.id}}" name="id" value = "{{libro.id}}"></td>
           </tr>
           {% endfor %}
-       </tbody>
      </table>
+
      <input type ='submit' value="Borrar">
     </form>
   </section>
