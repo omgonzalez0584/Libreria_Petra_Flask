@@ -41,7 +41,7 @@ body{
 }
 
 #cabecera {
-  background-color: rgb(255,255,255);
+  background-color: rgb(240,240,240);
   padding: 20px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -50,7 +50,7 @@ body{
 
 #seccion1{
   padding: 20px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(240,240,240);
 /*  background: #fffff0; */
   margin: 7px;
   }
@@ -58,7 +58,7 @@ body{
 #seccion2{
   float: left;
   padding: 20px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(240,240,240);
 /*  background: #fffff0; */
   margin: 7px;
 }
@@ -66,7 +66,7 @@ body{
 #seccion3{
   padding:20px;
   margin: 7px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(240,240,240);
 /*  background: #FFFFF0; */
 }
 
@@ -94,5 +94,5 @@ footer{
   background
   text-align: center;
   border-radius: 0px 0px 10px 10px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(240,240,240);
 }

@@ -1,0 +1,50 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  font: bold 27px verdana, sans-serif;
+  color: black;
+}
+
+body{
+  text-align: center;
+}
+
+header, nav, section, footer, aside, article, figcaption, figure,
+hgroup{
+  display: block;
+}
+
+#agrupar {
+  width: 700px;
+  text-align: left;
+  margin: 15px auto;
+}
+
+#cabecera{
+  text-align: center;
+  width: 700px;
+  padding: 20px;
+  background-color:  rgb(240,240,240);
+  border-radius: 20px;
+}
+
+#seccion{  
+  text-align: center;
+  width: 200px;
+  padding: 50px;
+  margin: 30px;
+  background-color: rgb(240,240,240);
+  border-radius: 20px;
+}
+
+label{
+  font: 15px verdana, sans-serif;
+  color: black;
+}
+
+footer{
+  padding: 20px;
+}
