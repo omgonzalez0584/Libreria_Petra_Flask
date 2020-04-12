@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Libreria Petra - Inventario</title>
+  <link rel="stylesheet"  href="static/css/petra.css">
+</head>
+
+<body>
+  <div id="agrupar">
+    <header id="cabecera">
+      <h1><a href="{{ url_for('mostrar_todo') }}">LIBRERIA PETRA</a></h1>
+    </header>
+
+  <nav id="menu">
+    <ul>
+      <li>Nosotros</li>
+      <li>Contactenos</li>
+    </ul>
+  </nav>
+
+  <section id="seccion1">
+    <h2>Listado de libros</h2>
+    <form action="http://127.0.0.1:5000/eliminar/" method="post">
+      <table>
+        <thead>
+          <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Autor</th>
+            <th>Materia</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Eliminar</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          {% for libro in libros %}
+          <tr>
+            <td>{{ libro.id }} </td>
+            <td>{{ libro.nombre }}</td>
+            <td>{{ libro.autor }}</td>
+            <td>{{ libro.materia }}</td>
+            <td>{{ libro.cantidad }}</td>
+            <td>{{ libro.precio }}</td>
+            <td> <input type="checkbox" id="{{libro.id}}" name="id" value = "{{libro.id}}"></td>
+          </tr>
+          {% endfor %}
+       </tbody>
+     </table>
+     <input type ='submit' value="Borrar">
+    </form>
+  </section>
+
+  <section id="seccion2">
+        <form action="http://127.0.0.1:5000/comprar/" method="post">
+          <h2>
+            Vender Libro
+          </h2>
+          <label>Codigo del Libro</label>
+          <input type="text" size="2" name ="id">
+          <label>Cantidad</label>
+          <input type="text" size="2" name = "cantidad">
+          <input type="submit" value="Vender">
+        </form>
+        {%- for categoria, mensaje in get_flashed_messages(with_categories=true)  %}
+        <div class="alert alert-danger">
+          {{ mensaje }}
+        </div>
+        {%- endfor %}
+  </section>
+
+ <section id="seccion3">
+     <a href="{{ url_for('nuevo') }}">Agregar Libros</a>
+ </section>
+
+  <footer>
+    <small> Derechos reservados &copy; 2017 - 2020 </small>
+  </footer>
+
+ </div>
+
+</body>
+</html>
