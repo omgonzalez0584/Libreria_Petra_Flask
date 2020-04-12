@@ -14,7 +14,8 @@ h1 > a{
 }
 
 h2 {
-  font: bold 20px verdana, sans-serif;
+  font: bold 25px verdana, sans-serif;
+  text-align: center;
 }
 
 th{
@@ -50,7 +51,7 @@ body{
 
 #seccion1{
   padding: 20px;
-  background-color: rgb(240,240,240);
+/*  background-color: rgb(240,240,240); */
 /*  background: #fffff0; */
   margin: 7px;
   }
@@ -95,4 +96,18 @@ footer{
   text-align: center;
   border-radius: 0px 0px 10px 10px;
   background-color: rgb(240,240,240);
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th ,td{
+  text-align: left;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
