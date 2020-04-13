@@ -4,7 +4,7 @@
 }
 
 h1{
-  font: bold 27px verdana, sans-serif;
+  font: bold 30px mifuente, verdana, sans-serif;
   color: black;
 }
 
@@ -31,7 +31,7 @@ hgroup{
   border-radius: 20px;
 }
 
-#seccion{  
+#seccion{
   text-align: center;
   width: 200px;
   padding: 50px;
@@ -41,10 +41,15 @@ hgroup{
 }
 
 label{
-  font: 15px verdana, sans-serif;
+  font: 20px mifuente,verdana, sans-serif;
   color: black;
 }
 
 footer{
   padding: 20px;
+}
+
+@font-face{
+  font-family: 'mifuente';
+  src:url('Inconsolata-Regular.ttf');
 }
