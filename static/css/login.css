@@ -1,0 +1,58 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  font: bold 30px  mifuente ,verdana, sans-serif;
+}
+
+label{
+  font: 20px  mifuente ,verdana, sans-serif;
+}
+
+header, nav, section, article, figure,figcaption, aside, footer, hgroup{
+  display: block;
+}
+
+body{
+  text-align: center;
+}
+
+#agrupar{
+  width: 400px;
+  margin: 15px auto;
+  text-align: left;
+  border: 1px solid rgb(0,0,0);
+  background-color: rgb(0,0,0);
+  border-radius: 15px;
+}
+
+#cabecera{
+  background-color: rgb(240,240,240);
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin:20px;
+}
+
+#seccion{
+  background-color: rgb(240,240,240);
+  width: 250px;
+  height:200px;
+  padding:20px;
+  margin: 50px;
+  border-radius: 5px;
+}
+
+input{
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family:'mifuente';
+  src:url('Inconsolata-Regular.ttf');
+}
