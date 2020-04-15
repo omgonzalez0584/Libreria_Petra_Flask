@@ -17,6 +17,10 @@ hgroup{
   display: block;
 }
 
+body{
+  text-align: center;
+}
+
 #agrupar {
   width: 700px;
   text-align: left;
@@ -25,17 +29,16 @@ hgroup{
 
 #cabecera{
   text-align: center;
-  width: 700px;
+  width: 600px;
   padding: 20px;
   background-color:  rgb(240,240,240);
   border-radius: 20px;
 }
 
 #seccion{
-  text-align: center;
-  width: 200px;
-  padding: 50px;
-  margin: 30px;
+  width: 500px;
+  padding: 30px;
+  margin: 35px;
   background-color: rgb(240,240,240);
   border-radius: 20px;
 }
@@ -47,6 +50,13 @@ label{
 
 footer{
   padding: 20px;
+}
+
+input{
+  width:100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 @font-face{
