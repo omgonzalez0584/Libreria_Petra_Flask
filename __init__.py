@@ -24,10 +24,41 @@ class libros(db.Model):
         self.cantidad = cantidad
         self.precio = precio
 
-#Muestra elementos de la tabla
+#Creacion de tabla usuarios
+class usuarios(db.Model):
+    id = db.Column('id', db.Integer, primary_key=True)
+    usuario = db.Column(db.String(20))
+    password = db.Column(db.String(15))
+
+    def __init__(self, usuario,password):
+        self.usuario = usuario
+        self.password = password
+
+
+
+#Loggin al sistema Libraria Petra
 @app.route('/')
+def inicio():
+    return render_template('login.html')
+
+#Muestra la Pagina Principal con la lista de libros
+@app.route('/mostrar_todo/')
 def mostrar_todo():
     return render_template('mostrar_todo.html', libros=libros.query.all())
+    #return redirect(url_for('login'))
+
+#Acceso a usuario
+@app.route('/login/',methods=['GET','POST'])
+def login():
+    if request.method == 'POST':
+        usuario = request.form['usuario']
+        password = request.form['password']
+        if usuario == 'ogonzalez' and password == '123456':
+            #return render_template('mostrar_todo.html', libros=libros.query.all())
+            return redirect(url_for('mostrar_todo'))
+    else:
+        return render_template('login.html')
+
 
 @app.route('/nuevo/', methods=['GET', 'POST'])
 #Agrega libros nuevos en la Base de Datos
