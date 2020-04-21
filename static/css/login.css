@@ -60,6 +60,7 @@ input[type=submit]{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  font: bold 15px mifuente, verdana,sans-serif;
 }
 
 @font-face{

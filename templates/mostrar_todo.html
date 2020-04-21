@@ -46,13 +46,14 @@
      </table>
 
      <input type ='submit' value="Borrar">
+     <a id="boton_link" href="{{ url_for('nuevo') }}">Agregar Libros</a>
     </form>
   </section>
 
   <section id="seccion2">
         <form action="http://127.0.0.1:5000/comprar/" method="post">
           <h2>
-            Vender Libro
+            Vender Libros
           </h2>
           <label>Codigo del Libro</label>
           <input type="text" size="2" name ="id">
@@ -68,7 +69,7 @@
   </section>
 
  <section id="seccion3">
-     <a id="boton_link" href="{{ url_for('nuevo') }}">Agregar Libros</a>
+  <h2>Descripcion del libro</h2>
  </section>
 
   <footer>

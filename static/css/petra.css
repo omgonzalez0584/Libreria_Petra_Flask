@@ -64,12 +64,15 @@ body{
   float: left;
   padding: 20px;
   margin: 7px;
+  border: 1px solid rgb(0,0,0);
 }
 
 #seccion3{
+  float: left;
+  width:540px;
   padding:20px;
   margin: 7px;
-
+  border: 1px solid rgb(0,0,0);
 }
 
 
@@ -109,17 +112,18 @@ table tr:nth-child(even) {
 }
 
 #boton_link:link, #boton_link:visited{
-  background-color: rgb(240,240,240);
-  color: black;
-  padding: 14px 25px;
+  background-color: rgb(128,128,128);
+  border:none;
+  color: white;
+  padding: 16px 32px;
   text-decoration: none;
   display: inline-block;
-  font: bold 30px mifuente, verdana,sans-serif;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor:pointer;
+  font: bold 15px mifuente, verdana,sans-serif;
 }
-#boton_link:hover, #boton_link:active{
-  color: white;
-  background-color: rgb(128,128,128);
-}
+
 
 #seccion2 input{
   width:100%;
@@ -137,6 +141,7 @@ input[type=submit]{
   margin: 4px 2px;
   cursor:pointer;
   border-radius: 5px;
+  font: bold 15px mifuente, verdana,sans-serif;
 }
 
 @font-face {
