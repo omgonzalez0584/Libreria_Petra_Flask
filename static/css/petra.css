@@ -4,7 +4,7 @@
 }
 
 label{
-  font: 15px mifuente, verdana, sans-serif;
+  font: 20px mifuente, verdana, sans-serif;
 }
 
 h1 > a{
@@ -54,6 +54,8 @@ body{
 /*  background-color: rgb(240,240,240); */
 /*  background: #fffff0; */
   margin: 7px;
+  border: 1px solid rgb(0,0,0);
+  border-radius: 5px;
   }
 
 /*prueba*/
@@ -116,7 +118,7 @@ table tr:nth-child(even) {
 }
 #boton_link:hover, #boton_link:active{
   color: white;
-  background-color: rgb(0,0,0);
+  background-color: rgb(128,128,128);
 }
 
 #seccion2 input{
@@ -124,6 +126,17 @@ table tr:nth-child(even) {
   padding: 6px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+input[type=submit]{
+  background-color: rgb(128,128,128);
+  border:none;
+  color:white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor:pointer;
+  border-radius: 5px;
 }
 
 @font-face {
